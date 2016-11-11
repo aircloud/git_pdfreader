@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pdf_reader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="pdf,pdf阅读器"/>
+    <meta name="keywords" content="javascripts,nodejs,http,nginx,react,react-native"/>
+    <meta name="author" content="Xiaotao Nie,onlythen@yeah.net"/>
+    <meta name="viewport" content="width=divice-width,initial-scale=1.2,user-scalable=no">
+    <style>
+        body,html{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            width:100%;
+            height:100%
+        }
+        .myiframe{
+            width:100%;
+            flex: 1;
+            height:100%;
+        }
+        #output{
+            width:100%;
+            display: inline-block;
+            height:200px;
+            margin-top: 300px;
+        }
+        #output1{
+            width:100%;
+            display: inline-block;
+            height:200px;
+            margin-top: 400px;
+        }
+    </style>
+</head>
+<body>
+
+<iframe src="build/generic/web/viewer.html?file=http://localhost:8081/components/pdf/big.pdf"
+class="myiframe"
+></iframe>
+
+<script>
+//    function handleGestureEvent(event) {
+//        var output = document.getElementById("output");
+//        switch(event.type) {
+//            case "gesturestart":
+//                output.innerHTML += "Gesture started (rotation=" + event.ratation +",scale=" + event.scale + ")";
+//                break;
+//            case "gestureend":
+//                output.innerHTML += "<br>Gesture ended (rotation+" + event.rotation + ",scale=" + event.scale + ")";
+//                break;
+//            case "gesturechange":
+//                output.innerHTML += "<br>Gesture changed (rotation+=" + event.rotation + ",scale+" + event.scale + ")";
+//                break;
+//        }
+//    }
+//    document.addEventListener("gesturestart", handleGestureEvent, false);
+//    document.addEventListener("gestureend", handleGestureEvent, false);
+//    document.addEventListener("gesturechange", handleGestureEvent, false);
+</script>
+
+</body>
+</html>
